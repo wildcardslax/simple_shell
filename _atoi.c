@@ -6,7 +6,7 @@ int is_interactive_mode(info_t *info)
     return (isatty(STDIN_FILENO) && info->readfd <= 2) ? 1 : 0;
 }
 
-/* Check if a character 'c' is part of the delimiter string 'delim'. */
+/* Check if a char 'c' is part of the delimiter string 'delim'. */
 int is_character_delimiter(char c, const char *delim)
 {
     while (*delim)
